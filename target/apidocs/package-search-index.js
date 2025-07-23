@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.adobe.aem.guides.wknd.core.config"},{"l":"com.adobe.aem.guides.wknd.core.models"},{"l":"com.adobe.aem.guides.wknd.core.models.impl"},{"l":"com.adobe.aem.guides.wknd.core.service"},{"l":"com.adobe.aem.guides.wknd.core.service.Impl"},{"l":"com.adobe.aem.guides.wknd.core.servlet"}]

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.adobe.aem.guides.wknd.core.service.Impl.EmailConfigServiceImpl" activate="activate">
+  <property name="senderEmail" type="String" value="no-reply@example.com"/>
+  <property name="recipientEmail" type="String" value="shraddha@example.com"/>
+  <property name="emailSubject" type="String" value="Test Email Notification"/>
+  <property name="emailContent" type="String" value="Hi Team, I am sending mail for your reference."/>
+  <service>
+    <provide interface="com.adobe.aem.guides.wknd.core.service.EmailConfigService"/>
+  </service>
+  <reference name="messageGatewayService" interface="com.day.cq.mailer.MessageGatewayService" field="messageGatewayService"/>
+  <implementation class="com.adobe.aem.guides.wknd.core.service.Impl.EmailConfigServiceImpl"/>
+</scr:component>

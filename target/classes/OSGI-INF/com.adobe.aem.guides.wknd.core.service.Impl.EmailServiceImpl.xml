@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.adobe.aem.guides.wknd.core.service.Impl.EmailServiceImpl" immediate="true" activate="activate" modified="activate">
+  <property name="smtpHost" type="String" value="smtp.yourdomain.com"/>
+  <property name="smtpPort" type="Integer" value="587"/>
+  <property name="fromAddress" type="String" value="no-reply@example.com"/>
+  <property name="sender" type="String" value="Shraddha.Erande@coforge.com"/>
+  <property name="recipient" type="String" value="Chetan.Sonawane@coforge.com"/>
+  <service>
+    <provide interface="com.adobe.aem.guides.wknd.core.service.EmailService"/>
+  </service>
+  <reference name="messageGatewayService" interface="com.day.cq.mailer.MessageGatewayService" field="messageGatewayService"/>
+  <implementation class="com.adobe.aem.guides.wknd.core.service.Impl.EmailServiceImpl"/>
+</scr:component>

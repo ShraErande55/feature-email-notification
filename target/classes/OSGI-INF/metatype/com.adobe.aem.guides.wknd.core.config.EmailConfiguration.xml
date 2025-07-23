@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.adobe.aem.guides.wknd.core.config.EmailConfiguration">
+  <OCD id="com.adobe.aem.guides.wknd.core.config.EmailConfiguration" name="Email Service Configuration" description="Email Setting For SMTP Server">
+    <AD id="smtpHost" type="String" name="SMTP Host" description="SMTP server hostname" default="smtp.yourdomain.com"/>
+    <AD id="smtpPort" type="Integer" name="SMTP Port" description="SMTP Port" default="587"/>
+    <AD id="fromAddress" type="String" name="From Address" description="Form of Address" default="no-reply@example.com"/>
+    <AD id="sender" type="String" name="Sender Email" description="Email Sender" default="Shraddha.Erande@coforge.com"/>
+    <AD id="recipient" type="String" name="Recipient Email" description=" Email Recipient" default="Chetan.Sonawane@coforge.com"/>
+  </OCD>
+  <Designate pid="com.adobe.aem.guides.wknd.core.service.Impl.EmailServiceImpl">
+    <Object ocdref="com.adobe.aem.guides.wknd.core.config.EmailConfiguration"/>
+  </Designate>
+  <Designate pid="com.adobe.aem.guides.wknd.core.servlet.EmailServlet">
+    <Object ocdref="com.adobe.aem.guides.wknd.core.config.EmailConfiguration"/>
+  </Designate>
+</metatype:MetaData>

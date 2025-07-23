@@ -1,0 +1,17 @@
+com\adobe\aem\guides\wknd\core\models\impl\ImageListImpl.class
+com\adobe\aem\guides\wknd\core\service\EmailConfigService.class
+com\adobe\aem\guides\wknd\core\servlet\EmailServlet.class
+com\adobe\aem\guides\wknd\core\config\EmailConfiguration.class
+com\adobe\aem\guides\wknd\core\models\impl\ImageListImpl$SimpleImageComponentResource.class
+com\adobe\aem\guides\wknd\core\service\Impl\EmailConfigServiceImpl.class
+com\adobe\aem\guides\wknd\core\models\ImageList$ListItem.class
+com\adobe\aem\guides\wknd\core\servlet\EmailCustomServlet.class
+com\adobe\aem\guides\wknd\core\service\EmailService.class
+com\adobe\aem\guides\wknd\core\models\HelloWorldModel.class
+com\adobe\aem\guides\wknd\core\config\EmailConfig.class
+com\adobe\aem\guides\wknd\core\service\Impl\EmailServiceImpl.class
+com\adobe\aem\guides\wknd\core\models\impl\ImageListImpl$ImageListItemImpl.class
+com\adobe\aem\guides\wknd\core\models\ImageList.class
+com\adobe\aem\guides\wknd\core\models\impl\BylineImpl.class
+com\adobe\aem\guides\wknd\core\models\Byline.class
+com\adobe\aem\guides\wknd\core\models\package-info.class

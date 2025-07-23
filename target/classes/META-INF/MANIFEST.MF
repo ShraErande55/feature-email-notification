@@ -1,0 +1,66 @@
+Manifest-Version: 1.0
+Bundle-Category: WKND Site
+Bundle-Description: Core bundle for WKND Sites Project
+Bundle-Developers: aem-guides-wknd;organization=Adobe;organizationUrl=
+ "https://www.adobe.com"
+Bundle-License: "MIT License";link="http://www.opensource.org/licenses
+ /mit-license.php"
+Bundle-ManifestVersion: 2
+Bundle-Name: WKND Sites Project - Core
+Bundle-SCM: url="https://github.com/adobe/aem-guides-wknd/tree/main/ae
+ m-guides-wknd.core",connection="scm:git:https://github.com/adobe/aem-
+ guides-wknd.git/aem-guides-wknd.core",developer-connection="scm:git:h
+ ttps://github.com/adobe/aem-guides-wknd.git/aem-guides-wknd.core",tag
+ =HEAD
+Bundle-SymbolicName: aem-guides-wknd.core
+Bundle-Vendor: Adobe
+Bundle-Version: 3.2.1.SNAPSHOT
+Export-Package: com.adobe.aem.guides.wknd.core.models;version="2.1.0";
+ uses:="com.adobe.cq.wcm.core.components.models.datalayer,com.fasterxm
+ l.jackson.annotation,javax.annotation,org.apache.sling.api.resource,o
+ rg.apache.sling.models.annotations,org.apache.sling.models.annotation
+ s.injectorspecific"
+Import-Package: javax.annotation;version="0.0.0",com.adobe.aem.guides.
+ wknd.core.models;version="[2.1,3)",com.adobe.cq.wcm.core.components.m
+ odels;version="[12.29,13)",com.adobe.cq.wcm.core.components.models.da
+ talayer;version="[1.3,2)",com.adobe.cq.wcm.core.components.models.dat
+ alayer.builder;version="[1.2,2)",com.adobe.cq.wcm.core.components.uti
+ l;version="[1.5,2)",com.day.cq.mailer;version="[6.0,7)",com.day.cq.se
+ arch;version="[1.5,2)",com.day.cq.search.result;version="[1.2,2)",com
+ .day.cq.wcm.api;version="[1.29,2)",com.day.cq.wcm.api.components;vers
+ ion="[5.8,6)",com.fasterxml.jackson.annotation;version="[2.13,3)",jav
+ ax.jcr;version="[2.0,3)",javax.servlet;version="[2.6,3)",org.apache.c
+ ommons.lang3;version="[3.12,4)",org.apache.commons.mail;version="[1.5
+ ,2)",org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.reso
+ urce;version="[2.13,3)",org.apache.sling.api.servlets;version="[2.4,3
+ )",org.apache.sling.api.wrappers;version="[2.8,3)",org.apache.sling.m
+ odels.annotations;version="[1.5,2)",org.apache.sling.models.annotatio
+ ns.injectorspecific;version="[1.1,2)",org.apache.sling.models.annotat
+ ions.via;version="[1.1,2)",org.apache.sling.models.factory;version="[
+ 1.4,2)",org.slf4j;version="[1.7,2)"
+Private-Package: com.adobe.aem.guides.wknd.core.config,com.adobe.aem.g
+ uides.wknd.core.models.impl,com.adobe.aem.guides.wknd.core.service,co
+ m.adobe.aem.guides.wknd.core.service.Impl,com.adobe.aem.guides.wknd.c
+ ore.servlet
+Provide-Capability: osgi.service;objectClass:List<String>="com.adobe.a
+ em.guides.wknd.core.service.EmailConfigService";uses:="com.adobe.aem.
+ guides.wknd.core.service",osgi.service;objectClass:List<String>="com.
+ adobe.aem.guides.wknd.core.service.EmailService";uses:="com.adobe.aem
+ .guides.wknd.core.service",osgi.service;objectClass:List<String>="jav
+ ax.servlet.Servlet";uses:="javax.servlet"
+Require-Capability: osgi.service;filter:="(objectClass=com.adobe.aem.g
+ uides.wknd.core.service.EmailConfigService)";effective:=active,osgi.s
+ ervice;filter:="(objectClass=com.adobe.aem.guides.wknd.core.service.E
+ mailService)";effective:=active,osgi.service;filter:="(objectClass=co
+ m.day.cq.mailer.MessageGatewayService)";effective:=active,osgi.extend
+ er;filter:="(&(osgi.extender=osgi.component)(version>=1.5.0)(!(versio
+ n>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.adobe.aem.guides.wknd.core.service.Imp
+ l.EmailConfigServiceImpl.xml,OSGI-INF/com.adobe.aem.guides.wknd.core.
+ service.Impl.EmailServiceImpl.xml,OSGI-INF/com.adobe.aem.guides.wknd.
+ core.servlet.EmailCustomServlet.xml,OSGI-INF/com.adobe.aem.guides.wkn
+ d.core.servlet.EmailServlet.xml
+Sling-Model-Classes: com.adobe.aem.guides.wknd.core.models.HelloWorldM
+ odel,com.adobe.aem.guides.wknd.core.models.impl.BylineImpl,com.adobe.
+ aem.guides.wknd.core.models.impl.ImageListImpl
+

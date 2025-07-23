@@ -1,0 +1,6 @@
+com.adobe.aem.guides.wknd.core.config
+com.adobe.aem.guides.wknd.core.models
+com.adobe.aem.guides.wknd.core.models.impl
+com.adobe.aem.guides.wknd.core.service
+com.adobe.aem.guides.wknd.core.service.Impl
+com.adobe.aem.guides.wknd.core.servlet

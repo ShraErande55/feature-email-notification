@@ -1,0 +1,6 @@
+com\adobe\aem\guides\wknd\core\models\impl\ImageListImplTest.class
+com\adobe\aem\guides\wknd\core\models\impl\ImageListImplTest$PredicateGroupByPath.class
+com\adobe\aem\guides\wknd\core\models\impl\ImageListImplTest$MockList.class
+com\adobe\aem\guides\wknd\core\models\impl\ImageListImplTest$MockListItem.class
+com\adobe\aem\guides\wknd\core\models\impl\BylineImplTest.class
+com\adobe\aem\guides\wknd\core\models\HelloWorldModelTest.class

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.adobe.aem.guides.wknd.core.config.EmailConfig">
+  <OCD id="com.adobe.aem.guides.wknd.core.config.EmailConfig" name="Email config" description="Configuration for sending emails">
+    <AD id="senderEmail" type="String" name="Sender Email" description="Email address used as sender" default="no-reply@example.com"/>
+    <AD id="recipientEmail" type="String" name="Recipient Email" description="Default recipient email address" default="shraddha@example.com"/>
+    <AD id="emailSubject" type="String" name="Email Subject" description="Default subject for the email" default="Test\ Email\ Notification"/>
+    <AD id="emailContent" type="String" name="Email Content" description="Default content for the email" default="Hi\ Team\,\ I\ am\ sending\ mail\ for\ your\ reference."/>
+  </OCD>
+  <Designate pid="com.adobe.aem.guides.wknd.core.service.Impl.EmailConfigServiceImpl">
+    <Object ocdref="com.adobe.aem.guides.wknd.core.config.EmailConfig"/>
+  </Designate>
+</metatype:MetaData>
